@@ -28,7 +28,7 @@ pro-rata redistribution for missing attributes, and demographic smoothing
 
 ---
 
-## Installation
+## Installation & Run
 
 You can install the development version of `censuspyrID` from GitHub using [`remotes`](https://cran.r-project.org/package=remotes):
 

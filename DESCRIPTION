@@ -1,0 +1,56 @@
+Package: censuspyrID
+Type: Package
+Title: Indonesian Population Pyramids from Harmonized and Unharmonized Census Data
+Version: 1.0
+Date: 2025-08-30
+Authors@R: c(
+    person(
+      given = "Ari Purwanto Sarwo", family = "Prasojo",
+      role = c("aut", "cre"),
+      email = "ari.prasojo18@gmail.com",
+      comment = c(
+        email2 = "arip003@brin.go.id",
+        ORCID = "0000-0002-4862-5523"
+      )
+    ),
+    person(
+      given = "Puguh", family = "Prasetyoputra",
+      role = "aut",
+      email = "pprasetyoputra@gmail.com",
+      comment = c(
+        email2 = "pugu004@brin.go.id",
+        ORCID = "0000-0001-5494-7003"
+      )
+    ),
+    person(
+      given = "Nur Fitri Mustika", family = "Ayu",
+      role = "aut",
+      email = "nurfitrimustikaayu@gmail.com"
+    )
+  )
+Description: Provides harmonized and unharmonized population pyramid datasets 
+    from the Indonesian population censuses (1971–2020). The package 
+    includes tools for visualization and an interactive Shiny application 
+    for data exploration.
+License: GPL-3
+Copyright: © 2025 Ari Purwanto Sarwo Prasojo, Puguh Prasetyoputra,
+    and Nur Fitri Mustika Ayu
+Depends: 
+    R (>= 4.1)
+Imports: 
+    shiny (>= 0.13.0),
+    shinythemes,
+    shinyWidgets,
+    shinyjs,
+    dplyr,
+    tidyr,
+    DT,
+    ggplot2,
+    ggthemes,
+    scales,
+    networkD3
+Suggests:
+    tibble
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

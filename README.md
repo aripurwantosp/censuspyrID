@@ -6,7 +6,7 @@
 
 ## Overview
 
-`censuspyrID` R package provides harmonized and unharmonized population pyramid datasets
+`censuspyrID` R package provides harmonized and non-harmonized population pyramid datasets
 from the Indonesian population censuses (1971–2020).
 It includes functions for loading, filtering, and visualizing population data,
 as well as an **interactive Shiny application** for exploring demographic structures
@@ -14,7 +14,7 @@ across provinces and census years.
 
 The harmonized dataset (`hpop5`) uses consistent province codes across censuses
 to enable long-term trend analysis despite administrative expansion
-(*pemekaran*), while the unharmonized dataset (`ypop5`) retains original province
+(*pemekaran*), while the non-harmonized dataset (`ypop5`) retains original province
 codes as published in each census year.
 
 Data sources include:
@@ -129,12 +129,12 @@ Her skills include quantitative analysis, big data processing, and the use of st
 ### Citation
 
 **APA style**:
-Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Harmonized and Unharmonized Indonesia Population Pyramid from Census Data*.
+Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data*.
 
 **BibTeX**:
 ```bibtex
 @misc{censuspyrid2025,
   author       = {Prasojo, Ari Purwanto Sarwo and Prasetyoputra, Puguh and Ayu, Nur Fitri Mustika},
-  title        = {censuspyrID: Harmonized and Unharmonized Indonesia Population Pyramid from Census Data},
+  title        = {censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data},
   year         = {2025}
 }

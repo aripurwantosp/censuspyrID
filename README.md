@@ -1,12 +1,12 @@
 # censuspyrID <img src="https://www.r-project.org/Rlogo.png" align="right" height="120"/>
 
-**An R package for Indonesian Population Pyramids from Harmonized and Unharmonized Census Data**
+**Explorer of Indonesian Population Pyramids from Harmonized and Non-harmonized Census Data**
 
 ---
 
 ## Overview
 
-`censuspyrID` provides harmonized and unharmonized population pyramid datasets
+`censuspyrID` R package provides harmonized and unharmonized population pyramid datasets
 from the Indonesian population censuses (1971–2020).
 It includes functions for loading, filtering, and visualizing population data,
 as well as an **interactive Shiny application** for exploring demographic structures

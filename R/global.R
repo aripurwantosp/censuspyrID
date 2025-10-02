@@ -9,12 +9,12 @@ assign('censuspyrID_data_env', new.env(), envir=parent.env(environment()))
 
 ## Sidebar for main parameter ----
 
-# geographic (province) mode
-censuspyrID_data_env$reg_mode <-
-  structure(
-    c(1,2),
-    names = c("Harmonized","Unharmonized")
-    )
+# # geographic (province) mode
+# censuspyrID_data_env$reg_mode <-
+#   structure(
+#     c(1,2),
+#     names = c("Harmonized","Non-harmonized")
+#     )
 
 # before-after expand option
 censuspyrID_data_env$expand_phase <-

@@ -2,7 +2,7 @@
 % Please edit documentation in R/censuspyrID.R
 \name{censuspyrID_explorer}
 \alias{censuspyrID_explorer}
-\title{Explore Harmonized and Unharmonized Population Pyramids from Indonesia’s Censuses (1971–2020)}
+\title{Explore Harmonized and Non-harmonized Population Pyramids from Indonesia’s Censuses (1971–2020)}
 \usage{
 censuspyrID_explorer(host = NULL, ...)
 }
@@ -17,7 +17,7 @@ The function launches the Shiny application. It does not return a value.
 }
 \description{
 Launches \strong{censuspyrID Explorer}, a Shiny application for visualizing harmonized and
-unharmonized population pyramids from Indonesia’s population censuses (1971–2020).
+non-harmonized population pyramids from Indonesia’s population censuses (1971–2020).
 }
 \details{
 The application provides interactive tools to explore demographic structures across provinces

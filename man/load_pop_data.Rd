@@ -8,7 +8,7 @@ load_pop_data(harmonized = TRUE, smoothing = 1)
 }
 \arguments{
 \item{harmonized}{Logical. If \code{TRUE} (default), load harmonized data
-(\code{hpop5}). If \code{FALSE}, load unharmonized data (\code{ypop5}).}
+(\code{hpop5}). If \code{FALSE}, load non-harmonized data (\code{ypop5}).}
 
 \item{smoothing}{Integer. Smoothing method applied to population counts:
 \itemize{
@@ -21,7 +21,7 @@ load_pop_data(harmonized = TRUE, smoothing = 1)
 A tibble with columns:
 \itemize{
 \item \code{year}: census year
-\item \code{province_id}: province identifier (harmonized or unharmonized)
+\item \code{province_id}: province identifier (harmonized or non-harmonized)
 \item \code{sex}: sex code
 \item \code{age5}: five-year age group code
 \item \code{pop}: population count (raw or smoothed)
@@ -36,7 +36,7 @@ with raw or smoothed estimates depending on the selected method.
 Data are retrieved from internal census datasets:
 \itemize{
 \item \code{hpop5}: harmonized census data
-\item \code{ypop5}: unharmonized census data
+\item \code{ypop5}: non-harmonized census data
 }
 
 Smoothing methods are applied to the population counts:
@@ -51,7 +51,7 @@ Smoothing methods are applied to the population counts:
 # Load harmonized, raw (unsmoothed) population data
 load_pop_data(harmonized = TRUE, smoothing = 1)
 
-# Load unharmonized, Arriaga-smoothed population data
+# Load non-harmonized, Arriaga-smoothed population data
 load_pop_data(harmonized = FALSE, smoothing = 2)
 }
 

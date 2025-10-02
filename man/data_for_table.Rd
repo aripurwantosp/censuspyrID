@@ -14,7 +14,7 @@ and year. Must include columns: \code{year}, \code{province_id}, \code{sex}, \co
 the province name.}
 
 \item{harmonized}{Logical. If \code{TRUE} (default), province codes are treated as
-harmonized; if \code{FALSE}, unharmonized codes are used.}
+harmonized; if \code{FALSE}, non-harmonized codes are used.}
 }
 \value{
 A data frame in wide format with columns:

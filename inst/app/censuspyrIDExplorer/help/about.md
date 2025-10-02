@@ -1,6 +1,6 @@
 ## About the App
 
-**censuspyrID Explorer** is an application for exploring harmonized and unharmonized population pyramids from Indonesia’s population censuses (1971–2020).
+**censuspyrID Explorer** is an application for exploring harmonized and non-harmonized population pyramids from Indonesia’s population censuses (1971–2020).
 Analyzing population structures over time requires consistent data. Subnational analysis in Indonesia faces additional challenges due to administrative splits of provinces.
 
 This application (part of the `censuspyrID` package) documents population structure data from the Indonesian Population Censuses (1971–2020), harmonizes them to ensure consistency, and provides dynamic exploration features through interactive visualizations and tables.
@@ -53,12 +53,12 @@ Her skills include quantitative analysis, big data processing, and the use of st
 ## Citation
 
 **APA style**:
-Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Harmonized and Unharmonized Indonesia Population Pyramid from Census Data*.
+Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data*.
 
 **BibTeX**:
 ```bibtex
 @misc{censuspyrid2025,
   author       = {Prasojo, Ari Purwanto Sarwo and Prasetyoputra, Puguh and Ayu, Nur Fitri Mustika},
-  title        = {censuspyrID: Harmonized and Unharmonized Indonesia Population Pyramid from Census Data},
+  title        = {censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data},
   year         = {2025}
 }

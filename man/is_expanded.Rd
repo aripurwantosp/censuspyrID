@@ -7,7 +7,7 @@
 is_expanded(reg_code)
 }
 \arguments{
-\item{reg_code}{Unharmonized province code (character or numeric).}
+\item{reg_code}{non-harmonized province code (character or numeric).}
 }
 \value{
 A logical value:
@@ -27,7 +27,7 @@ Expansion status is determined by the field \code{expanded}.
 }
 \examples{
 # Example: check expansion status of a province
-get_code_label(5) #returns list of unharmonized province code
+get_code_label(5) #returns list of non-harmonized province code
 is_expanded(1400)   # returns TRUE/FALSE for Riau province
 
 }

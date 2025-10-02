@@ -1,10 +1,10 @@
 utils::globalVariables('censuspyrID_data_env')
 
-#' Explore Harmonized and Unharmonized Population Pyramids from Indonesia’s Censuses (1971–2020)
+#' Explore Harmonized and Non-harmonized Population Pyramids from Indonesia’s Censuses (1971–2020)
 #'
 #' @description
 #' Launches **censuspyrID Explorer**, a Shiny application for visualizing harmonized and
-#' unharmonized population pyramids from Indonesia’s population censuses (1971–2020).
+#' non-harmonized population pyramids from Indonesia’s population censuses (1971–2020).
 #'
 #' @details
 #' The application provides interactive tools to explore demographic structures across provinces
@@ -37,10 +37,10 @@ censuspyrID_explorer <- function(host = NULL, ...){
 #' Create region (province) list
 #'
 #' Internal helper function to generate a list of provinces,
-#' depending on whether harmonized or unharmonized coding is used.
+#' depending on whether harmonized or non-harmonized coding is used.
 #'
 #' @param harmonized Logical. If `TRUE` (default), use harmonized province codes.
-#'   If `FALSE`, use unharmonized province codes.
+#'   If `FALSE`, use non-harmonized province codes.
 #'
 #' @return A named vector, where values are province IDs and names are
 #'   corresponding province labels.
@@ -72,7 +72,7 @@ reg_list <- function(harmonized = TRUE){
 #' to a province that has been expanded (i.e., administratively split
 #' or modified).
 #'
-#' @param reg_code Unharmonized province code (character or numeric).
+#' @param reg_code non-harmonized province code (character or numeric).
 #'
 #' @return A logical value:
 #' \itemize{
@@ -88,7 +88,7 @@ reg_list <- function(harmonized = TRUE){
 #'
 #' @examples
 #' # Example: check expansion status of a province
-#' get_code_label(5) #returns list of unharmonized province code
+#' get_code_label(5) #returns list of non-harmonized province code
 #' is_expanded(1400)   # returns TRUE/FALSE for Riau province
 #'
 #' @export
@@ -105,14 +105,14 @@ is_expanded <- function(reg_code){
 #' Get Census Year Coverage for a Province
 #'
 #' This function determines the range of census years available for a given
-#' province. Coverage depends on whether harmonized or unharmonized codes are
-#' used, and in the case of unharmonized data, whether the province has
+#' province. Coverage depends on whether harmonized or non-harmonized codes are
+#' used, and in the case of non-harmonized data, whether the province has
 #' experienced administrative expansion (pemekaran).
 #'
 #' @param reg_code Character or numeric. Province code. Required if
 #'   \code{harmonized = FALSE}.
 #' @param harmonized Logical. If \code{TRUE} (default), returns harmonized
-#'   coverage (1971–2020). If \code{FALSE}, uses unharmonized coverage.
+#'   coverage (1971–2020). If \code{FALSE}, uses non-harmonized coverage.
 #' @param before_expand Logical. Only relevant if \code{harmonized = FALSE}
 #'   and the province has expanded. If \code{TRUE} (default), returns coverage
 #'   before expansion; if \code{FALSE}, returns coverage after expansion.
@@ -123,7 +123,7 @@ is_expanded <- function(reg_code){
 #' \itemize{
 #'   \item For harmonized data (\code{harmonized = TRUE}), the full coverage
 #'         of 1971–2020 is returned.
-#'   \item For unharmonized data (\code{harmonized = FALSE}), coverage is
+#'   \item For non-harmonized data (\code{harmonized = FALSE}), coverage is
 #'         determined based on the internal dataset \code{prov_coverage}.
 #'   \item If the province has expanded, coverage depends on
 #'         \code{before_expand}.
@@ -138,11 +138,11 @@ is_expanded <- function(reg_code){
 #' # Harmonized coverage (1971–2020)
 #' year_range(harmonized = TRUE)
 #'
-#' # Unharmonized coverage for a province (before expansion)
-#' get_code_label(5) #returns list of unharmonized province code
+#' # non-harmonized coverage for a province (before expansion)
+#' get_code_label(5) #returns list of non-harmonized province code
 #' year_range(reg_code = 1400, harmonized = FALSE, before_expand = TRUE)
 #'
-#' # Unharmonized coverage for a province (after expansion)
+#' # non-harmonized coverage for a province (after expansion)
 #' year_range(reg_code = 1400, harmonized = FALSE, before_expand = FALSE)
 #' }
 #'
@@ -197,7 +197,7 @@ year_range <- function(reg_code=NULL, harmonized = TRUE, before_expand = TRUE){
 #' @details
 #' Data are retrieved from internal census datasets:
 #' - `hpop5`: harmonized census data
-#' - `ypop5`: unharmonized census data
+#' - `ypop5`: non-harmonized census data
 #'
 #' Smoothing methods are applied to the population counts:
 #' - `1`: none (raw, default)
@@ -205,7 +205,7 @@ year_range <- function(reg_code=NULL, harmonized = TRUE, before_expand = TRUE){
 #' - `3`: Karup–King–Newton (KKN) method
 #'
 #' @param harmonized Logical. If `TRUE` (default), load harmonized data
-#'   (`hpop5`). If `FALSE`, load unharmonized data (`ypop5`).
+#'   (`hpop5`). If `FALSE`, load non-harmonized data (`ypop5`).
 #' @param smoothing Integer. Smoothing method applied to population counts:
 #'   * `1`: none (raw)
 #'   * `2`: Arriaga
@@ -213,7 +213,7 @@ year_range <- function(reg_code=NULL, harmonized = TRUE, before_expand = TRUE){
 #'
 #' @return A tibble with columns:
 #' - `year`: census year
-#' - `province_id`: province identifier (harmonized or unharmonized)
+#' - `province_id`: province identifier (harmonized or non-harmonized)
 #' - `sex`: sex code
 #' - `age5`: five-year age group code
 #' - `pop`: population count (raw or smoothed)
@@ -225,7 +225,7 @@ year_range <- function(reg_code=NULL, harmonized = TRUE, before_expand = TRUE){
 #' # Load harmonized, raw (unsmoothed) population data
 #' load_pop_data(harmonized = TRUE, smoothing = 1)
 #'
-#' # Load unharmonized, Arriaga-smoothed population data
+#' # Load non-harmonized, Arriaga-smoothed population data
 #' load_pop_data(harmonized = FALSE, smoothing = 2)
 #' }
 #'
@@ -310,11 +310,11 @@ pop_data_by_reg <- function(data, reg){
 #'
 #' @description
 #' Internal helper function to retrieve the province name corresponding to
-#' a given province code. Works with either harmonized or unharmonized codes.
+#' a given province code. Works with either harmonized or non-harmonized codes.
 #'
 #' @param code Integer or character. The province code to look up.
 #' @param harmonized Logical. If `TRUE` (default), the function searches using
-#'   harmonized province codes. If `FALSE`, it uses unharmonized province codes.
+#'   harmonized province codes. If `FALSE`, it uses non-harmonized province codes.
 #'
 #' @return A character string with the corresponding province name.
 #'
@@ -322,14 +322,14 @@ pop_data_by_reg <- function(data, reg){
 #' This function relies on the internal object `ref_label`, which must contain
 #' the reference tables:
 #' * `provinceh_label` for harmonized codes (`province_id_h`, `label`).
-#' * `province_label` for unharmonized codes (`province_id_y`, `label`).
+#' * `province_label` for non-harmonized codes (`province_id_y`, `label`).
 #'
 #' @keywords internal
 #'
 #' @examples
 #' \dontrun{
 #' reg_name(31)          # returns harmonized province name
-#' reg_name(3100, FALSE)   # returns unharmonized province name
+#' reg_name(3100, FALSE)   # returns non-harmonized province name
 #' }
 reg_name <- function(code, harmonized = TRUE){
   if(harmonized){
@@ -884,7 +884,7 @@ area_trends <- function(data, sex = 1, color = "Fresh and bright"){
 #' @param reg_code Integer or character. Province code used to retrieve
 #'   the province name.
 #' @param harmonized Logical. If `TRUE` (default), province codes are treated as
-#'   harmonized; if `FALSE`, unharmonized codes are used.
+#'   harmonized; if `FALSE`, non-harmonized codes are used.
 #'
 #' @details
 #' The function performs the following steps:
@@ -944,7 +944,7 @@ data_for_table <- function(data, reg_code, harmonized = TRUE){
 #' versions:
 #' \itemize{
 #'   \item \code{hpop5} — Harmonized province codes across census years.
-#'   \item \code{ypop5} — Original (unharmonized) province codes as reported in each census.
+#'   \item \code{ypop5} — Original (non-harmonized) province codes as reported in each census.
 #' }
 #'
 #' Both datasets are processed from census samples provided by IPUMS International
@@ -957,7 +957,7 @@ data_for_table <- function(data, reg_code, harmonized = TRUE){
 #' \describe{
 #'   \item{\code{year}}{Census year.}
 #'   \item{\code{province_id_h}}{Harmonized province identifier (in \code{hpop5}).}
-#'   \item{\code{province_id_y}}{Unharmonized province identifier (in \code{ypop5}).}
+#'   \item{\code{province_id_y}}{non-harmonized province identifier (in \code{ypop5}).}
 #'   \item{\code{sex}}{Sex code.}
 #'   \item{\code{age5}}{Age group in 5-year intervals.}
 #'   \item{\code{ns}}{Unsmoothed population count.}
@@ -996,7 +996,7 @@ data_for_table <- function(data, reg_code, harmonized = TRUE){
 #' glimpse(hpop5)
 #' head(hpop5)
 #'
-#' # Unharmonized data
+#' # non-harmonized data
 #' data(ypop5)
 #' glimpse(ypop5)
 #' head(ypop5)
@@ -1012,7 +1012,7 @@ NULL
 #'
 #' This function returns reference tables for codes and labels used in the
 #' package. It can provide mappings for census years, sex, age groups, and
-#' province codes (harmonized or unharmonized).
+#' province codes (harmonized or non-harmonized).
 #'
 #' @param what Integer indicating which reference table to return:
 #'   \itemize{
@@ -1020,7 +1020,7 @@ NULL
 #'     \item 2 = Sex code and label
 #'     \item 3 = Age (5-year group) code and label
 #'     \item 4 = Harmonized province code and label
-#'     \item 5 = Unharmonized province code and label
+#'     \item 5 = Non-harmonized province code and label
 #'   }
 #'
 #' @details

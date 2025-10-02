@@ -8,7 +8,7 @@ reg_list(harmonized = TRUE)
 }
 \arguments{
 \item{harmonized}{Logical. If \code{TRUE} (default), use harmonized province codes.
-If \code{FALSE}, use unharmonized province codes.}
+If \code{FALSE}, use non-harmonized province codes.}
 }
 \value{
 A named vector, where values are province IDs and names are
@@ -16,7 +16,7 @@ corresponding province labels.
 }
 \description{
 Internal helper function to generate a list of provinces,
-depending on whether harmonized or unharmonized coding is used.
+depending on whether harmonized or non-harmonized coding is used.
 }
 \details{
 \itemize{

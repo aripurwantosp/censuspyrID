@@ -4,16 +4,24 @@
 \name{censuspyrID-package}
 \alias{censuspyrID}
 \alias{censuspyrID-package}
-\title{censuspyrID: Explore and visualize Indonesian census pyramids}
+\title{censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-harmonized Census Data}
 \description{
-Provides harmonized and unharmonized population pyramid datasets from the Indonesian population censuses (1971–2020). The package includes tools for visualization and an interactive Shiny application for data exploration.
+Provides harmonized and non-harmonized population pyramid datasets from the Indonesian population censuses (1971–2020). The package includes tools for visualization and an interactive Shiny application for data exploration.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/aripurwantosp/censuspyrID}
+  \item Report bugs at \url{https://github.com/aripurwantosp/censuspyrID/issues}
+}
+
 }
 \author{
-\strong{Maintainer}: Ari Purwanto Sarwo Prasojo \email{ari.prasojo18@gmail.com} (\href{https://orcid.org/0000-0002-4862-5523}{ORCID}) (arip003@brin.go.id)
+\strong{Maintainer}: Ari Purwanto Sarwo Prasojo \email{ari.prasojo18@gmail.com} (\href{https://orcid.org/0000-0002-4862-5523}{ORCID})
 
 Authors:
 \itemize{
-  \item Puguh Prasetyoputra \email{pprasetyoputra@gmail.com} (\href{https://orcid.org/0000-0001-5494-7003}{ORCID}) (pugu004@brin.go.id)
+  \item Puguh Prasetyoputra \email{pprasetyoputra@gmail.com} (\href{https://orcid.org/0000-0001-5494-7003}{ORCID})
   \item Nur Fitri Mustika Ayu \email{nurfitrimustikaayu@gmail.com}
 }
 

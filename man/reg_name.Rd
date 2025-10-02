@@ -10,27 +10,27 @@ reg_name(code, harmonized = TRUE)
 \item{code}{Integer or character. The province code to look up.}
 
 \item{harmonized}{Logical. If \code{TRUE} (default), the function searches using
-harmonized province codes. If \code{FALSE}, it uses unharmonized province codes.}
+harmonized province codes. If \code{FALSE}, it uses non-harmonized province codes.}
 }
 \value{
 A character string with the corresponding province name.
 }
 \description{
 Internal helper function to retrieve the province name corresponding to
-a given province code. Works with either harmonized or unharmonized codes.
+a given province code. Works with either harmonized or non-harmonized codes.
 }
 \details{
 This function relies on the internal object \code{ref_label}, which must contain
 the reference tables:
 \itemize{
 \item \code{provinceh_label} for harmonized codes (\code{province_id_h}, \code{label}).
-\item \code{province_label} for unharmonized codes (\code{province_id_y}, \code{label}).
+\item \code{province_label} for non-harmonized codes (\code{province_id_y}, \code{label}).
 }
 }
 \examples{
 \dontrun{
 reg_name(31)          # returns harmonized province name
-reg_name(3100, FALSE)   # returns unharmonized province name
+reg_name(3100, FALSE)   # returns non-harmonized province name
 }
 }
 \keyword{internal}

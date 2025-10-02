@@ -13,7 +13,7 @@ get_code_label(what = 4)
 \item 2 = Sex code and label
 \item 3 = Age (5-year group) code and label
 \item 4 = Harmonized province code and label
-\item 5 = Unharmonized province code and label
+\item 5 = Non-harmonized province code and label
 }}
 }
 \value{
@@ -23,7 +23,7 @@ selected reference category.
 \description{
 This function returns reference tables for codes and labels used in the
 package. It can provide mappings for census years, sex, age groups, and
-province codes (harmonized or unharmonized).
+province codes (harmonized or non-harmonized).
 }
 \details{
 The function retrieves data from internal reference object

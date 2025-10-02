@@ -11,7 +11,7 @@ year_range(reg_code = NULL, harmonized = TRUE, before_expand = TRUE)
 \code{harmonized = FALSE}.}
 
 \item{harmonized}{Logical. If \code{TRUE} (default), returns harmonized
-coverage (1971–2020). If \code{FALSE}, uses unharmonized coverage.}
+coverage (1971–2020). If \code{FALSE}, uses non-harmonized coverage.}
 
 \item{before_expand}{Logical. Only relevant if \code{harmonized = FALSE}
 and the province has expanded. If \code{TRUE} (default), returns coverage
@@ -22,15 +22,15 @@ An integer vector of census years, with labels as names.
 }
 \description{
 This function determines the range of census years available for a given
-province. Coverage depends on whether harmonized or unharmonized codes are
-used, and in the case of unharmonized data, whether the province has
+province. Coverage depends on whether harmonized or non-harmonized codes are
+used, and in the case of non-harmonized data, whether the province has
 experienced administrative expansion (pemekaran).
 }
 \details{
 \itemize{
 \item For harmonized data (\code{harmonized = TRUE}), the full coverage
 of 1971–2020 is returned.
-\item For unharmonized data (\code{harmonized = FALSE}), coverage is
+\item For non-harmonized data (\code{harmonized = FALSE}), coverage is
 determined based on the internal dataset \code{prov_coverage}.
 \item If the province has expanded, coverage depends on
 \code{before_expand}.
@@ -43,11 +43,11 @@ determined based on the internal dataset \code{prov_coverage}.
 # Harmonized coverage (1971–2020)
 year_range(harmonized = TRUE)
 
-# Unharmonized coverage for a province (before expansion)
-get_code_label(5) #returns list of unharmonized province code
+# non-harmonized coverage for a province (before expansion)
+get_code_label(5) #returns list of non-harmonized province code
 year_range(reg_code = 1400, harmonized = FALSE, before_expand = TRUE)
 
-# Unharmonized coverage for a province (after expansion)
+# non-harmonized coverage for a province (after expansion)
 year_range(reg_code = 1400, harmonized = FALSE, before_expand = FALSE)
 }
 

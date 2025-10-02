@@ -2,7 +2,7 @@
 .onAttach <- function(libname, pkgname) {
   packageStartupMessage(paste0(
     "Welcome to censuspyrID ", utils::packageVersion(pkgname), "!\n",
-    "An R package for exploring harmonized and unharmonized\n",
+    "An R package for exploring harmonized and non-harmonized\n",
     "population pyramids of Indonesia based on census data (1971-2020).\n",
     "Type citation(\"censuspyrID\") for citation info."
   ))

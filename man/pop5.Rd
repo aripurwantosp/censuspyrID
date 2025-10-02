@@ -11,7 +11,7 @@ Each dataset is a tibble (data frame) with the following variables:
 \describe{
 \item{\code{year}}{Census year.}
 \item{\code{province_id_h}}{Harmonized province identifier (in \code{hpop5}).}
-\item{\code{province_id_y}}{Unharmonized province identifier (in \code{ypop5}).}
+\item{\code{province_id_y}}{non-harmonized province identifier (in \code{ypop5}).}
 \item{\code{sex}}{Sex code.}
 \item{\code{age5}}{Age group in 5-year intervals.}
 \item{\code{ns}}{Unsmoothed population count.}
@@ -39,7 +39,7 @@ derived from a series of Indonesian population censuses. Data are available in t
 versions:
 \itemize{
 \item \code{hpop5} — Harmonized province codes across census years.
-\item \code{ypop5} — Original (unharmonized) province codes as reported in each census.
+\item \code{ypop5} — Original (non-harmonized) province codes as reported in each census.
 }
 
 Both datasets are processed from census samples provided by IPUMS International
@@ -55,7 +55,7 @@ data(hpop5)
 glimpse(hpop5)
 head(hpop5)
 
-# Unharmonized data
+# non-harmonized data
 data(ypop5)
 glimpse(ypop5)
 head(ypop5)

@@ -18,7 +18,7 @@ The smoothing procedures were implemented using the `smooth_age_5` function from
 ## Data, Code, and Labels
 The datasets used in this application are accessible in R as follows:
 - `data("hpop5")` for the harmonized version
-- `data("ypop5")` for the unharmonized version
+- `data("ypop5")` for the non-harmonized version
 - `load_pop_data()` function
 
 Descriptions of each dataset can be accessed through:
@@ -31,4 +31,4 @@ Reference codes and labels are available at:
 - `get_code_label(2)` for sex code and label
 - `get_code_label(3)` for age (5-year group) code and label
 - `get_code_label(4)` for harmonized province code and label
-- `get_code_label(4)` for unharmonized province code and label
+- `get_code_label(4)` for non-harmonized province code and label

@@ -3,15 +3,15 @@
 The sidebar menu contains widgets to control the main parameters of the explorer:
 
 - **Mode and Province Selector**
-  Two modes are available: *Harmonized* and *Unharmonized*.
+  Two modes are available: *Harmonized* and *Non-harmonized*.
   - *Harmonized* means that provinces that were split are aggregated back into their parent province, ensuring consistent boundaries across all censuses from 1971 to 2020.
   - The list of provinces will adapt based on the selected mode.
 
 - **Expand Phase**
-  This widget appears only if *Unharmonized* mode is selected and the chosen province has experienced a split. Options are *Before* or *After* the split.
+  This widget appears only if *Non-harmonized* mode is selected and the chosen province has experienced a split. Options are *Before* or *After* the split.
 
 - **Census Year Slider**
-  Allows users to select the census year. If *Unharmonized* mode is selected and the province has split, available census years will depend on the chosen *Expand Phase*.
+  Allows users to select the census year. If *Non-harmonized* mode is selected and the province has split, available census years will depend on the chosen *Expand Phase*.
 
 - **Smoothing Option**
   Defines how population counts are displayed:
@@ -58,7 +58,7 @@ This tab visualizes trends in the population structure for a selected province. 
 
 Visualization can use either absolute counts or relative counts (proportion/percentage).
 
-If *Unharmonized* mode is selected and the province has split, the visualization will follow the chosen *Expand Phase* (before or after the split).
+If *Non-harmonized* mode is selected and the province has split, the visualization will follow the chosen *Expand Phase* (before or after the split).
 
 ---
 

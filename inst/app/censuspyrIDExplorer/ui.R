@@ -7,7 +7,7 @@ fluidPage(
   titlePanel(
     title = HTML(
      "<h3><b>censuspyrID Explorer</b></h3>
-     <h5>Exploring Harmonized and Unharmonized Population Pyramids
+     <h5>Exploring Harmonized and Non-harmonized Population Pyramids
      from Indonesia’s Censuses (1971–2020)</h5>"
     )
   ),

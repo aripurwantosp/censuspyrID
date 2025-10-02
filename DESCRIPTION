@@ -1,26 +1,20 @@
 Package: censuspyrID
 Type: Package
-Title: Indonesian Population Pyramids from Harmonized and Unharmonized Census Data
-Version: 1.0
-Date: 2025-08-30
+Title: Explorer of Indonesian Population Pyramids from Harmonized and Non-harmonized Census Data
+Version: 1.0.1
+Date: 2025-10-02
 Authors@R: c(
     person(
       given = "Ari Purwanto Sarwo", family = "Prasojo",
       role = c("aut", "cre"),
       email = "ari.prasojo18@gmail.com",
-      comment = c(
-        email2 = "arip003@brin.go.id",
-        ORCID = "0000-0002-4862-5523"
-      )
+      comment = c(ORCID = "0000-0002-4862-5523")
     ),
     person(
       given = "Puguh", family = "Prasetyoputra",
       role = "aut",
       email = "pprasetyoputra@gmail.com",
-      comment = c(
-        email2 = "pugu004@brin.go.id",
-        ORCID = "0000-0001-5494-7003"
-      )
+      comment = c(ORCID = "0000-0001-5494-7003")
     ),
     person(
       given = "Nur Fitri Mustika", family = "Ayu",
@@ -28,7 +22,7 @@ Authors@R: c(
       email = "nurfitrimustikaayu@gmail.com"
     )
   )
-Description: Provides harmonized and unharmonized population pyramid datasets 
+Description: Provides harmonized and non-harmonized population pyramid datasets 
     from the Indonesian population censuses (1971–2020). The package 
     includes tools for visualization and an interactive Shiny application 
     for data exploration.

@@ -24,14 +24,15 @@ Each dataset is a tibble (data frame) with the following variables:
 }
 }
 \source{
-Steven Ruggles, Lara Cleveland, Rodrigo Lovaton, Sula Sarkar, Matthew Sobek,
-Derek Burk, Dan Ehrlich, Quinn Heimann, Jane Lee, and Nate Merrill.
-\emph{Integrated Public Use Microdata Series, International: Version 7.6} (dataset).
-Minneapolis, MN: IPUMS, 2025. \doi{10.18128/D020.V7.6}
+Ruggles, S., Cleveland, L., Lovaton, R., Sarkar, S., Sobek, M., Burk, D.,
+Ehrlich, D., Heimann, Q., Lee, J., & Merrill, N. (2025).
+\emph{Integrated Public Use Microdata Series, International: Version 7.7} (dataset).
+Minneapolis, MN: IPUMS. \doi{10.18128/D020.V7.7}
 
-Badan Pusat Statistik (BPS). \emph{Jumlah Penduduk Menurut Wilayah, Kelompok Umur,
-dan Jenis Kelamin, di INDONESIA – Sensus Penduduk 2020}. Retrieved September 4, 2025,
-from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+Badan Pusat Statistik (BPS). (2020).
+\emph{Jumlah Penduduk Menurut Wilayah, Kelompok Umur, dan Jenis Kelamin,
+di INDONESIA – Sensus Penduduk 2020.}
+Retrieved September 4, 2025, from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
 }
 \description{
 Population counts in 5-year age groups at the provincial level (subnational level 1),
@@ -55,20 +56,29 @@ data(hpop5)
 glimpse(hpop5)
 head(hpop5)
 
-# non-harmonized data
+# Non-harmonized data
 data(ypop5)
 glimpse(ypop5)
 head(ypop5)
 
 }
 \references{
-Steven Ruggles, Lara Cleveland, Rodrigo Lovaton, Sula Sarkar, Matthew Sobek,
-Derek Burk, Dan Ehrlich, Quinn Heimann, Jane Lee, and Nate Merrill.
-\emph{Integrated Public Use Microdata Series, International: Version 7.6} (dataset).
-Minneapolis, MN: IPUMS, 2025. \doi{10.18128/D020.V7.6}
+Ruggles, S., Cleveland, L., Lovaton, R., Sarkar, S., Sobek, M., Burk, D.,
+Ehrlich, D., Heimann, Q., Lee, J., & Merrill, N. (2025).
+\emph{Integrated Public Use Microdata Series, International: Version 7.7} (dataset).
+Minneapolis, MN: IPUMS. \doi{10.18128/D020.V7.7}
 
-#' Badan Pusat Statistik (BPS). \emph{Jumlah Penduduk Menurut Wilayah, Kelompok Umur,
-dan Jenis Kelamin, di INDONESIA – Sensus Penduduk 2020}. Retrieved September 4, 2025,
-from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+Badan Pusat Statistik (BPS). (2020).
+\emph{Jumlah Penduduk Menurut Wilayah, Kelompok Umur, dan Jenis Kelamin,
+di INDONESIA – Sensus Penduduk 2020.}
+Retrieved September 4, 2025, from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+
+Shryock, H. S., & Siegel, J. S. (Eds.). (1976).
+APPENDIX C - Selected General Methods. In \emph{The Methods and Materials of Demography}
+(pp. 531–559). Academic Press. \doi{10.1016/B978-0-12-641150-8.50031-7}
+
+Aburto, J. M., Kashnitsky, I., Pascariu, M., & Riffe, T. (2022).
+\emph{Smoothing with DemoTools.}
+Available at: \url{https://timriffe.github.io/DemoTools/articles/smoothing_with_demotools.html#references-1}
 }
 \keyword{datasets}

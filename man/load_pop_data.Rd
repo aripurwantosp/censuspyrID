@@ -57,5 +57,5 @@ load_pop_data(harmonized = FALSE, smoothing = 2)
 
 }
 \seealso{
-\code{\link[=pop_data_by_year]{pop_data_by_year()}}, \code{\link[=pop_data_by_reg]{pop_data_by_reg()}}
+\code{\link[=pop_data_by_year]{pop_data_by_year()}}, \code{\link[=pop_data_by_reg]{pop_data_by_reg()}}, \link{pop5}
 }

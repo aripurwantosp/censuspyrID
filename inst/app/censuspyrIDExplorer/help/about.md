@@ -53,12 +53,12 @@ Her skills include quantitative analysis, big data processing, and the use of st
 ## Citation
 
 **APA style**:
-Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data*.
+Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data*.
 
 **BibTeX**:
 ```bibtex
 @misc{censuspyrid2025,
   author       = {Prasojo, Ari Purwanto Sarwo and Prasetyoputra, Puguh and Ayu, Nur Fitri Mustika},
-  title        = {censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data},
+  title        = {censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data},
   year         = {2025}
 }

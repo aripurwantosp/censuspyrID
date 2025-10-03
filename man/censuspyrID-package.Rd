@@ -4,9 +4,9 @@
 \name{censuspyrID-package}
 \alias{censuspyrID}
 \alias{censuspyrID-package}
-\title{censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-harmonized Census Data}
+\title{censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data}
 \description{
-Provides harmonized and non-harmonized population pyramid datasets from the Indonesian population censuses (1971–2020). The package includes tools for visualization and an interactive Shiny application for data exploration.
+Provides harmonized and non-harmonized population pyramid datasets from the Indonesian population censuses (1971–2020), along with tools for visualization and an interactive Shiny explorer application. Data are processed from IPUMS International (1971–2010) and the Population Census 2020 (BPS Indonesia), including aggregation, prorating (prorate adjustment), and demographic smoothing (Arriaga and Karup–King–Newton methods). See Ruggles et al. (2025) \doi{10.18128/D020.V7.7} and Badan Pusat Statistik (2020) \url{http://sensus.bps.go.id/topik/tabular/sp2020/3} for details on the original data sources. See Shyrock & Siegel (1976) \doi{10.1016/B978-0-12-641150-8.50031-7} for prorate adjustment and Aburto et al. (2022) \url{https://timriffe.github.io/DemoTools/articles/smoothing_with_demotools.html#references-1} for demographic smoothing methods.
 }
 \seealso{
 Useful links:

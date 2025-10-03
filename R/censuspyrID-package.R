@@ -1,4 +1,4 @@
-#' censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-harmonized Census Data
+#' censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data
 #'
 #' @docType package
 #' @keywords internal

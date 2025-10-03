@@ -1,6 +1,6 @@
 # censuspyrID <img src="https://www.r-project.org/Rlogo.png" align="right" height="120"/>
 
-**Explorer of Indonesian Population Pyramids from Harmonized and Non-harmonized Census Data**
+**Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data**
 
 ---
 
@@ -19,12 +19,14 @@ codes as published in each census year.
 
 Data sources include:
 
-- **IPUMS International (1971–2010)** — [IPUMS International](https://doi.org/10.18128/D020.V7.6)
+- **IPUMS International (1971–2010)** — [IPUMS International](https://doi.org/10.18128/D020.V7.7)
 - **Population Census 2020 (BPS Indonesia)** — [BPS Census Portal](http://sensus.bps.go.id/topik/tabular/sp2020/3)
 
 Both datasets were processed with steps including aggregation into 5-year age groups,
-pro-rata redistribution for missing attributes, and demographic smoothing
-(Arriaga and Karup–King–Newton methods).
+prorate adjustment (redistribution) for missing attributes, and demographic smoothing
+(Arriaga and Karup–King–Newton methods). See [Shyrock & Siegel (1976)](https://doi.org/10.1016/B978-0-12-641150-8.50031-7)
+for prorate adjusment and [Aburto et al. (2022)](https://timriffe.github.io/DemoTools/articles/smoothing_with_demotools.html#references-1)
+for demographic smoothing methods.
 
 ---
 
@@ -129,12 +131,12 @@ Her skills include quantitative analysis, big data processing, and the use of st
 ### Citation
 
 **APA style**:
-Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data*.
+Prasojo, A. P. S., Prasetyoputra, P., & Ayu, N. F. M. (2025). *censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data*.
 
 **BibTeX**:
 ```bibtex
 @misc{censuspyrid2025,
   author       = {Prasojo, Ari Purwanto Sarwo and Prasetyoputra, Puguh and Ayu, Nur Fitri Mustika},
-  title        = {censuspyrID: Harmonized and Non-harmonized Indonesia Population Pyramid from Census Data},
+  title        = {censuspyrID: Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data},
   year         = {2025}
 }

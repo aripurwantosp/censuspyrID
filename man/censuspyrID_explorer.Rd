@@ -2,7 +2,7 @@
 % Please edit documentation in R/censuspyrID.R
 \name{censuspyrID_explorer}
 \alias{censuspyrID_explorer}
-\title{Explore Harmonized and Non-harmonized Population Pyramids from Indonesia’s Censuses (1971–2020)}
+\title{Explore Harmonized and Non-Harmonized Population Pyramids from Indonesia’s Censuses (1971–2020)}
 \usage{
 censuspyrID_explorer(host = NULL, ...)
 }

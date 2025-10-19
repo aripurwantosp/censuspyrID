@@ -27,10 +27,4 @@ the reference tables:
 \item \code{province_label} for non-harmonized codes (\code{province_id_y}, \code{label}).
 }
 }
-\examples{
-\dontrun{
-reg_name(31)          # returns harmonized province name
-reg_name(3100, FALSE)   # returns non-harmonized province name
-}
-}
 \keyword{internal}

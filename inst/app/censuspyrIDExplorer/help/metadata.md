@@ -1,13 +1,13 @@
 ## Data Sources
 The application relies on two main data sources:
 - [**IPUMS International**](https://doi.org/10.18128/D020.V7.7): Indonesian population census samples for the years 1971–2010.
-- [**Statistics Indonesia (Badan Pusat Statistik, BPS)**](http://sensus.bps.go.id/topik/tabular/sp2020/3): Official data on population counts by province, sex, and age from the 2020 Population Census.
+- [**Statistics Indonesia (Badan Pusat Statistik, BPS)**](https://sensus.bps.go.id/topik/tabular/sp2020/3): Official data on population counts by province, sex, and age from the 2020 Population Census.
 
 ## Data Pre-processing
 The preparation steps to generate population counts by province, sex, and age were as follows:
 
 - Aggregation of population counts by sex and age groups, accounting for sampling weights in the census sample data;
-- Redistribution (prorating) of counts where sex or age information was missing, see [Shyrock & Siegel (1976)](https://doi.org/10.1016/B978-0-12-641150-8.50031-7);
+- Redistribution (prorating) of counts where sex or age information was missing;
 - Final datasets were provided in three versions:
   - **Raw (non-smoothed)**
   - **Smoothed using the Arriaga method**

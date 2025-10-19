@@ -32,7 +32,7 @@ Minneapolis, MN: IPUMS. \doi{10.18128/D020.V7.7}
 Badan Pusat Statistik (BPS). (2020).
 \emph{Jumlah Penduduk Menurut Wilayah, Kelompok Umur, dan Jenis Kelamin,
 di INDONESIA – Sensus Penduduk 2020.}
-Retrieved September 4, 2025, from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+Retrieved September 4, 2025, from \url{https://sensus.bps.go.id/topik/tabular/sp2020/3}
 }
 \description{
 Population counts in 5-year age groups at the provincial level (subnational level 1),
@@ -71,11 +71,10 @@ Minneapolis, MN: IPUMS. \doi{10.18128/D020.V7.7}
 Badan Pusat Statistik (BPS). (2020).
 \emph{Jumlah Penduduk Menurut Wilayah, Kelompok Umur, dan Jenis Kelamin,
 di INDONESIA – Sensus Penduduk 2020.}
-Retrieved September 4, 2025, from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+Retrieved September 4, 2025, from \url{https://sensus.bps.go.id/topik/tabular/sp2020/3}
 
-Shryock, H. S., & Siegel, J. S. (Eds.). (1976).
-APPENDIX C - Selected General Methods. In \emph{The Methods and Materials of Demography}
-(pp. 531–559). Academic Press. \doi{10.1016/B978-0-12-641150-8.50031-7}
+Siegel, J. S., Swanson, D. A., & Shryock, H. S. (Eds.). (2004).
+The methods and materials of demography (2nd ed). Elsevier/Academic Press.
 
 Aburto, J. M., Kashnitsky, I., Pascariu, M., & Riffe, T. (2022).
 \emph{Smoothing with DemoTools.}

@@ -325,12 +325,6 @@ pop_data_by_reg <- function(data, reg){
 #' * `province_label` for non-harmonized codes (`province_id_y`, `label`).
 #'
 #' @keywords internal
-#'
-#' @examples
-#' \dontrun{
-#' reg_name(31)          # returns harmonized province name
-#' reg_name(3100, FALSE)   # returns non-harmonized province name
-#' }
 reg_name <- function(code, harmonized = TRUE){
   if(harmonized){
     name <- ref_label$provinceh_label |>
@@ -977,7 +971,7 @@ data_for_table <- function(data, reg_code, harmonized = TRUE){
 #' Badan Pusat Statistik (BPS). (2020).
 #' *Jumlah Penduduk Menurut Wilayah, Kelompok Umur, dan Jenis Kelamin,
 #' di INDONESIA – Sensus Penduduk 2020.*
-#' Retrieved September 4, 2025, from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+#' Retrieved September 4, 2025, from \url{https://sensus.bps.go.id/topik/tabular/sp2020/3}
 #'
 #' @references
 #' Ruggles, S., Cleveland, L., Lovaton, R., Sarkar, S., Sobek, M., Burk, D.,
@@ -988,11 +982,10 @@ data_for_table <- function(data, reg_code, harmonized = TRUE){
 #' Badan Pusat Statistik (BPS). (2020).
 #' *Jumlah Penduduk Menurut Wilayah, Kelompok Umur, dan Jenis Kelamin,
 #' di INDONESIA – Sensus Penduduk 2020.*
-#' Retrieved September 4, 2025, from \url{http://sensus.bps.go.id/topik/tabular/sp2020/3}
+#' Retrieved September 4, 2025, from \url{https://sensus.bps.go.id/topik/tabular/sp2020/3}
 #'
-#' Shryock, H. S., & Siegel, J. S. (Eds.). (1976).
-#' APPENDIX C - Selected General Methods. In *The Methods and Materials of Demography*
-#' (pp. 531–559). Academic Press. \doi{10.1016/B978-0-12-641150-8.50031-7}
+#' Siegel, J. S., Swanson, D. A., & Shryock, H. S. (Eds.). (2004).
+#' The methods and materials of demography (2nd ed). Elsevier/Academic Press.
 #'
 #' Aburto, J. M., Kashnitsky, I., Pascariu, M., & Riffe, T. (2022).
 #' *Smoothing with DemoTools.*

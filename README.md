@@ -1,6 +1,7 @@
-# censuspyrID <img src="https://www.r-project.org/Rlogo.png" align="right" height="120"/>
-
 **Explorer of Indonesian Population Pyramids from Harmonized and Non-Harmonized Census Data**
+
+[![CRAN status](https://www.r-pkg.org/badges/version/censuspyrID)](https://CRAN.R-project.org/package=censuspyrID)
+[![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/censuspyrID)](https://CRAN.R-project.org/package=censuspyrID)
 
 ---
 
@@ -32,7 +33,13 @@ for demographic smoothing methods.
 
 ## Installation & Run
 
-You can install the development version of `censuspyrID` from GitHub using [`remotes`](https://cran.r-project.org/package=remotes):
+You can install the package from CRAN using:
+
+```r
+install.packages("censuspyrID")
+```
+
+Alternatively, you can install the development version of `censuspyrID` from GitHub using [`remotes`](https://cran.r-project.org/package=remotes):
 
 ```r
 # install remotes if not already installed

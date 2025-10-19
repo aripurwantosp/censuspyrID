@@ -60,18 +60,16 @@ censuspyrID_explorer()
 The `censuspyrID_explorer()` function launches the application in your default web browser. See the Help menu within the application for a detailed navigation guide.
 
 <img src="https://github.com/aripurwantosp/censuspyrID/blob/main/screenshot/censuspyrID_explorer_1.png" align="left"/>
-
 <br></br>
 
 <img src="https://github.com/aripurwantosp/censuspyrID/blob/main/screenshot/censuspyrID_explorer_2.png" align="left"/>
-
 <br></br>
 
 <img src="https://github.com/aripurwantosp/censuspyrID/blob/main/screenshot/censuspyrID_explorer_3.png" align="left"/>
-
 <br></br>
 
 <img src="https://github.com/aripurwantosp/censuspyrID/blob/main/screenshot/censuspyrID_explorer_4.png" align="left"/>
+<br></br>
 
 ---
 

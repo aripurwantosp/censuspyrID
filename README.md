@@ -73,8 +73,6 @@ The `censuspyrID_explorer()` function launches the application in your default w
 
 <img src="https://github.com/aripurwantosp/censuspyrID/blob/main/screenshot/censuspyrID_explorer_4.png" align="left"/>
 
-<br></br>
-
 ---
 
 ## Functions

@@ -27,7 +27,7 @@ License: GPL-3
 Depends: 
     R (>= 4.1)
 Imports: 
-    shiny (>= 0.13.0),
+    shiny (>= 1.11.1),
     shinythemes,
     shinyWidgets,
     shinyjs,
@@ -37,7 +37,6 @@ Imports:
     ggplot2,
     ggthemes,
     scales,
-    markdown,
     networkD3
 Suggests:
     tibble

@@ -37,6 +37,7 @@ Imports:
     ggplot2,
     ggthemes,
     scales,
+    markdown,
     networkD3
 Suggests:
     tibble
